@@ -1,0 +1,538 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.titulo {
+  font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1d273b;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/* Configuración principal de los contenedores */
+.contenedor, .contenedor1 {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor1 {
+  padding: 60px 0;
+}
+
+header::before {
+  content: "";
+  display: block;
+  height: 80px;
+}
+
+header {
+  /* Navegación */
+  /* Contenido header */
+}
+header nav {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid transparent;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: ease-in-out 0.5s;
+}
+header nav .nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+header nav .nav .logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .nav .logo img {
+  height: 70%;
+}
+header nav .nav .enlaces-header {
+  font-weight: 300;
+  transition: ease-in-out 0.5s;
+}
+header nav .nav .enlaces-header a {
+  color: #5D6678;
+  text-decoration: none;
+  margin-left: 20px;
+}
+header nav .nav .hamburguesa {
+  width: 80px;
+  height: 80px;
+  display: none;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+header nav .nav .hamburguesa i {
+  font-size: 25px;
+  line-height: 80px;
+}
+header .contenido-header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .contenido-header .textos-header {
+  margin: 0 0 0 30px;
+}
+header .contenido-header img {
+  width: 550px;
+  animation: ease-in animat 1s;
+}
+header .contenido-header p {
+  font-weight: 100;
+  margin-top: 14px;
+  color: #5D6678;
+}
+header .contenido-header a {
+  margin: 28px 0 0 0;
+  width: 130px;
+  display: inline-block;
+  background: #1FDE82;
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(31, 222, 130, 0.46);
+}
+@keyframes animat {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* About us*/
+.about-us {
+  background: #f2f2f2;
+}
+.about-us .contenedor-articulo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.about-us .contenedor-articulo .articulo {
+  width: 29%;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 45px 30px 66px 30px;
+  transition: 0.5s;
+}
+.about-us .contenedor-articulo .articulo:hover {
+  box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+}
+.about-us .contenedor-articulo .articulo i {
+  font-size: 30px;
+  color: #fff;
+  background: #1FDE82;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(31, 222, 130, 0.46);
+}
+.about-us .contenedor-articulo .articulo h3 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+.about-us .contenedor-articulo .articulo p {
+  font-weight: 100;
+  color: #5D6678;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+.about-us .contenedor-articulo .articulo a {
+  color: #5D6678;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Questions */
+.questions {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions .textos-questions {
+  margin: 0 0 0 30px;
+}
+.questions img {
+  width: 550px;
+  height: 80%;
+}
+.questions p {
+  font-weight: 100;
+  margin-top: 14px;
+  color: #5D6678;
+}
+.questions a {
+  margin: 28px 0 0 0;
+  width: 130px;
+  display: inline-block;
+  background: #1FDE82;
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(31, 222, 130, 0.46);
+}
+
+/* results */
+.results {
+  background: #2570ff;
+  padding-top: 30px;
+}
+.results .content-results {
+  display: flex;
+  justify-content: space-evenly;
+}
+.results .content-results .numbers {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.results .content-results .numbers .number {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 35px;
+  margin-bottom: 20px;
+}
+.results .content-results .numbers .number h4 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.results .content-results .numbers .number p {
+  color: #f2f5fc;
+  font-weight: 300;
+}
+.results .content-results .results-text {
+  width: 37%;
+}
+.results .content-results .results-text h4 {
+  color: #fff;
+  font-size: 40px;
+}
+.results .content-results .results-text p {
+  color: #fff;
+  font-weight: 300;
+  margin: 30px 0;
+}
+.results .content-results .results-text a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 10px 0;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.services img {
+  width: 500px;
+}
+.services .box-skils {
+  margin: 30px 30px 0 0;
+}
+.services .box-skils h4 {
+  font-size: 24px;
+  background: #f2f2f2;
+  width: 350px;
+  border-radius: 6px;
+  padding: 10px 0 10px 15px;
+  margin-bottom: 10px;
+}
+.services .box-skils h4 i {
+  color: #1FDE82;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Footer*/
+footer {
+  background: #f3f3f3;
+  padding: 60px 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+}
+footer .partFooter {
+  width: 20%;
+  text-align: center;
+}
+footer .partFooter h4 {
+  color: #1d273b;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+footer .partFooter img {
+  width: 70%;
+}
+footer .partFooter a {
+  display: block;
+  text-decoration: none;
+  color: #5D6678;
+  font-weight: 300;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+footer .partFooter a:hover {
+  color: #1FDE82;
+}
+footer .partFooter .social-media i {
+  font-size: 20px;
+  display: inline-block;
+  color: #adb6c7;
+  border: 1px solid #adb6c7;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  margin-right: 5px;
+}
+footer .partFooter .social-media i:hover {
+  color: #fff;
+  background-color: #1FDE82;
+  border-color: #1FDE82;
+}
+
+/* MediaQuery */
+@media screen and (max-width: 950px) {
+  /* Services */
+  .services {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 750px;
+  }
+  .services .box-skils {
+    margin: 30px 0 30px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .titulo {
+    font-size: 45px;
+  }
+
+  /* Header */
+  header .contenido-header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 720px;
+  }
+  header .contenido-header img {
+    width: 400px;
+  }
+  header .contenido-header .textos-header {
+    margin: 0;
+  }
+
+  /* About us*/
+  .about-us .contenedor-articulo .articulo {
+    width: 45%;
+  }
+
+  /* Questions */
+  .questions {
+    height: 720px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .questions .textos-questions {
+    margin: 0 0 0 30px;
+  }
+  .questions img {
+    width: 400px;
+  }
+
+  /* results */
+  .results .content-results {
+    flex-direction: column-reverse;
+    margin-left: 40px;
+  }
+  .results .content-results .numbers {
+    width: 100%;
+  }
+  .results .content-results .results-text {
+    width: 100%;
+  }
+  .results .content-results .results-text a {
+    margin-bottom: 60px;
+  }
+
+  /* Services */
+  .services {
+    height: 600px;
+  }
+  .services img {
+    width: 300px;
+    padding: 0 50px;
+    box-sizing: content-box;
+  }
+  .services .box-skils h4 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .titulo {
+    font-size: 35px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  /* Header */
+  header {
+    /* Navegación */
+  }
+  header nav .nav {
+    padding: 0 10px;
+  }
+  header nav .nav .enlaces-header {
+    position: fixed;
+    background: #659999;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f4791f, #659999);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f4791f, #659999);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    clip-path: circle(0% at 100% 0);
+  }
+  header nav .nav .enlaces-header a {
+    color: white;
+  }
+  header nav .nav .menudos {
+    clip-path: circle(141.4% at 100% 0);
+    clip-path: circle(141.4% at 100% 0);
+  }
+  header nav .nav .hamburguesa {
+    display: block;
+  }
+  header .contenido-header {
+    height: 520px;
+  }
+  header .contenido-header img {
+    width: 200px;
+  }
+
+  /* About us*/
+  .about-us .contenedor-articulo .articulo {
+    width: 95%;
+  }
+
+  /* Questions */
+  .questions {
+    margin-top: 0px;
+    height: 600px;
+  }
+  .questions img {
+    width: 200px;
+    height: 30%;
+  }
+
+  /* results */
+  .results .content-results {
+    margin-left: 10px;
+  }
+  .results .content-results .results-text h4 {
+    font-size: 35px;
+  }
+  .results .content-results .numbers .number {
+    width: 95%;
+  }
+
+  /* Services */
+  .services {
+    width: 100%;
+  }
+  .services img {
+    width: 200px;
+  }
+  .services .box-skils h4 {
+    width: 250px;
+  }
+
+  /* Footer*/
+  footer .partFooter {
+    width: 495%;
+    margin-bottom: 20px;
+  }
+  footer .partFooter img {
+    width: 30%;
+  }
+  footer .partFooter h4 {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
